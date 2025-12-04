@@ -1,0 +1,111 @@
+{
+  "calibration" : {
+    "metersPerPoint" : 0.1,
+    "origin" : {
+      "x" : 0,
+      "y" : 0
+    }
+  },
+  "edges" : [
+    {
+      "capacity" : 3,
+      "from" : "S1",
+      "to" : "S2",
+      "transportTime" : 2
+    },
+    {
+      "capacity" : 3,
+      "from" : "S2",
+      "to" : "S3",
+      "transportTime" : 2
+    }
+  ],
+  "floorplan" : {
+    "heightMeters" : 30,
+    "imageName" : "floorplan-placeholder",
+    "widthMeters" : 60
+  },
+  "sketches" : [
+    {
+      "id" : "AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE",
+      "points" : [
+        {
+          "x" : 0,
+          "y" : 0
+        },
+        {
+          "x" : 10,
+          "y" : 0
+        },
+        {
+          "x" : 10,
+          "y" : 10
+        }
+      ]
+    }
+  ],
+  "stationModels" : [
+    {
+      "colorHex" : "#4E8BED",
+      "cycleTime" : 12,
+      "id" : "assembly",
+      "name" : "Assembly",
+      "wipLimit" : 6
+    },
+    {
+      "colorHex" : "#FFB347",
+      "cycleTime" : 6,
+      "id" : "inspection",
+      "name" : "Inspection",
+      "wipLimit" : 3
+    },
+    {
+      "colorHex" : "#2ECC71",
+      "cycleTime" : 8,
+      "id" : "packout",
+      "name" : "Packout",
+      "wipLimit" : 4
+    }
+  ],
+  "stations" : [
+    {
+      "id" : "S1",
+      "modelId" : "assembly",
+      "name" : "Assembly 1",
+      "position" : {
+        "x" : 5,
+        "y" : 5
+      },
+      "size" : {
+        "height" : 3,
+        "width" : 4
+      }
+    },
+    {
+      "id" : "S2",
+      "modelId" : "inspection",
+      "name" : "Inspection 1",
+      "position" : {
+        "x" : 15,
+        "y" : 5
+      },
+      "size" : {
+        "height" : 2,
+        "width" : 3
+      }
+    },
+    {
+      "id" : "S3",
+      "modelId" : "packout",
+      "name" : "Packout",
+      "position" : {
+        "x" : 25,
+        "y" : 5
+      },
+      "size" : {
+        "height" : 3,
+        "width" : 4
+      }
+    }
+  ]
+}
